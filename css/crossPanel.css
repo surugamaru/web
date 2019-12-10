@@ -1,0 +1,45 @@
+.crossPanel {
+	display: inline-block;
+	margin: 10px 5px;
+	position: relative;
+	border-top: solid 2.5px;
+	border-bottom: solid 2.5px;
+	padding: 5px 15px;
+	text-decoration: none;
+	color: white;
+}
+
+.crossPanel:before,
+.crossPanel:after {
+	content: '';
+	position: absolute;
+	top: -10px;
+	width: 2.5px;
+	height: calc(100% + 20px);
+	transition: .1s;
+	background: white;
+}
+
+.crossPanel:before {
+	left: 7px;
+}
+
+.crossPanel:after {
+	right: 7px;
+}
+
+.crossPanel a {
+	font-weight: bold;
+}
+
+.crossPanel:hover:before {
+	top: 0px;
+	left: 0px;
+	height: 100%;
+}
+
+.crossPanel:hover:after {
+	top: 0px;
+	right: 0px;
+	height: 100%;
+}

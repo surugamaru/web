@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scale=no" />
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<!-- title -->
+	<title>駿河丸</title>
+	<!-- icon -->
+	<link rel="shortcut icon" href="./img/icon.ico" />
+	<!-- styleSheet -->
+	<link rel="stylesheet" type="text/css" href="./css/loading.css" />
+	<link rel="stylesheet" type="text/css" href="./css/crossPanel.css" />
+	<!-- javaScript -->
+	<script type="text/javascript" src="./javascript/responsive.js"></script>
+	<script type="module" src="./javascript/updateManager.js"></script>
+	<script type="text/javascript" src="./javascript/loading.js"></script>
+	<script type="text/javascript" src="./javascript/animation.js"></script>
+	<script type="text/javascript" src="./javascript/database.js"></script>
+	<script type="text/javascript" src="./javascript/snsnavigation.js"></script>
+</head>
+
+<body>
+	<!-- loading -->
+	<div id="loading">
+		<p>Now Loading</p>
+	</div>
+
+	<div id="contents" style="display: none;">
+		<!-- pagePath -->
+		<div class="pagePath">
+			<a href="./menu.html">メニュー</a>
+			<a>＞</a>
+			<a>サラダ</a>
+		</div>
+		<!-- topImage -->
+		<div class="header"></div>
+		<!-- topName -->
+		<h1>サラダ</h1>
+		<!-- pageView -->
+		<div>
+			<a href="./index.html" class="crossPanel">
+				<p>ホーム</p>
+			</a>
+			<a href="./menu.html" class="crossPanel">
+				<p>メニュー</p>
+			</a>
+			<a href="./blog.html" class="crossPanel">
+				<p>ブログ</p>
+			</a>
+			<a href="./access.html" class="crossPanel">
+				<p>アクセス</p>
+			</a>
+		</div>
+		<hr />
+		<!-- contents -->
+		<script>setupDataBase("salada.csv")</script>
+		<div id="database"></div>
+		<hr />
+		<!-- footer -->
+		<div id="footer"></div>
+		<!-- copyright -->
+		<small>
+			<p>&copy; 2019 KanzakiRei</p>
+		</small>
+	</div>
+</body>
+
+</html>
