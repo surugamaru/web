@@ -10,7 +10,7 @@ function setupDataBase(_fileName) {
 
 	// 読み込みが完了した時
 	req.onload = function () {
-		onLoadedJsonDataBase(req.responseText);
+		onLoadedJsonDataBase(JSON.parse(req.responseText));
 	}
 }
 
@@ -19,8 +19,6 @@ function setupDataBase(_fileName) {
  * @param {*} _jsonData 読み込んだJsonデータが文字列として渡される
  */
 function onLoadedJsonDataBase(_jsonData) {
-
-	var test = JSON.parse(_jsonData);
 	// 最終的な二次元配列を入れるための配列
 	let result = [];
 
