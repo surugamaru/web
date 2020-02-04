@@ -1,6 +1,6 @@
 /**
- * CSVファイルを読み込む
- * @param {*} _FileName 読み込むCSVファイル名を渡す
+ * Jsonファイルを読み込む
+ * @param {*} _FileName 読み込むJsonファイル名を渡す
  */
 function setupDataBase(_FileName) {
 	// HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
@@ -10,15 +10,15 @@ function setupDataBase(_FileName) {
 
 	// 読み込みが完了した時
 	req.onload = function () {
-		onLoadedCSVDataBase(req.responseText);
+		onLoadedJsonDataBase(req.responseText);
 	}
 }
 
 /**
- * 読み込んだCSVデータを二次元配列に変換する
- * @param {*} _Str 読み込んだCSVデータが文字列として渡される
+ * 読み込んだJsonデータを二次元配列に変換する
+ * @param {*} _Str 読み込んだJsonデータが文字列として渡される
  */
-function onLoadedCSVDataBase(_Str) {
+function onLoadedJsonDataBase(_Str) {
 	// 最終的な二次元配列を入れるための配列
 	let result = [];
 
