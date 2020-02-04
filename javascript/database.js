@@ -5,7 +5,7 @@
 function setupDataBase(_FileName) {
 	// HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
 	let req = new XMLHttpRequest();
-	req.open("get", "./database/database_" + _FileName, true);
+	req.open("get", "./database/" + _FileName, true);
 	req.send(null);
 
 	// 読み込みが完了した時
@@ -43,6 +43,11 @@ function onLoadedJsonDataBase(_Str) {
 		div.classList.add("crossPanel");
 		div.classList.add("js-animation");
 		target.appendChild(div);
+
+		Console.WriteLine(result[i][0]);
+		Console.WriteLine(result[i][1]);
+		Console.WriteLine(result[i][2]);
+		Console.WriteLine(result[i][3]);
 
 		// 画像の作成
 		img.src = "./img/" + result[i][0];
