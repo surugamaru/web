@@ -19,20 +19,7 @@ function setupDataBase(_fileName) {
  * @param {*} _jsonData 読み込んだJsonデータが文字列として渡される
  */
 function onLoadedJsonDataBase(_jsonData) {
-	// 最終的な二次元配列を入れるための配列
-	let result = [];
-
-	// 改行を区切り文字として行を要素とした配列を生成
-	let tmp = _jsonData.split("\n");
-
-	// 各行ごとにカンマで区切った文字列を要素とした二次元配列を生成
-	for (let i = 0; i < tmp.length; ++i) {
-		result[i] = tmp[i].split(',');
-	}
-	// 指定した要素の取得
-	let target = document.getElementById("database");
-
-	for (let i = 0; i < result.length - 1; ++i) {
+	for (let i = 0; i < _jsonData.length - 1; ++i) {
 		// 追加する要素の作成
 		let div = document.createElement("div");
 		let img = document.createElement("img");
@@ -44,21 +31,21 @@ function onLoadedJsonDataBase(_jsonData) {
 		div.classList.add("js-animation");
 		target.appendChild(div);
 
-		console.log(_jsonData.Stock);
-		console.log(_jsonData.Name);
-		console.log(_jsonData.Price);
-		console.log(_jsonData.Path);
+		console.log(_jsonData[i].Stock);
+		console.log(_jsonData[i].Name);
+		console.log(_jsonData[i].Price);
+		console.log(_jsonData[i].Path);
 
 		// 画像の作成
-		img.src = "./img/" + _jsonData.Path;
+		img.src = "./img/" + _jsonData[i].Path;
 		div.appendChild(img);
 
 		// 名称の作成
-		h2.textContent = _jsonData.Name;
+		h2.textContent = _jsonData[i].Name;
 		div.appendChild(h2);
 
 		// 説明の作成
-		p.textContent = _jsonData.Price;
+		p.textContent = _jsonData[i].Price.toString();
 		div.appendChild(p);
 	}
 	// すべての設定が完了したら見えているパネルの表示
