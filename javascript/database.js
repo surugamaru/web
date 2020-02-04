@@ -10,7 +10,7 @@ function setupDataBase(_fileName) {
 
 	// 読み込みが完了した時
 	req.onload = function () {
-		onLoadedJsonDataBase(JSON.parse(xmlhttp.responseText));
+		onLoadedJsonDataBase(JSON.parse(req.responseText));
 	}
 }
 
