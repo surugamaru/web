@@ -22,7 +22,7 @@ function onLoadedJsonDataBase(_jsonData) {
 	// 指定した要素の取得
 	let target = document.getElementById("database");
 
-	for (let i = 0; i < _jsonData.length - 1; ++i) {
+	for (let i = 0; i < _jsonData.length; ++i) {
 		// 追加する要素の作成
 		let div = document.createElement("div");
 		let img = document.createElement("img");
@@ -34,11 +34,6 @@ function onLoadedJsonDataBase(_jsonData) {
 		div.classList.add("js-animation");
 		target.appendChild(div);
 
-		console.log(_jsonData[i].Stock);
-		console.log(_jsonData[i].Name);
-		console.log(_jsonData[i].Price);
-		console.log(_jsonData[i].Path);
-
 		// 画像の作成
 		img.src = "./img/" + _jsonData[i].Path;
 		div.appendChild(img);
@@ -48,7 +43,7 @@ function onLoadedJsonDataBase(_jsonData) {
 		div.appendChild(h2);
 
 		// 説明の作成
-		p.textContent = _jsonData[i].Price.toString();
+		p.textContent = _jsonData[i].Price.toString() + "円+税";
 		div.appendChild(p);
 	}
 	// すべての設定が完了したら見えているパネルの表示
