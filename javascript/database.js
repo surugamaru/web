@@ -19,6 +19,9 @@ function setupDataBase(_fileName) {
  * @param {*} _jsonData 読み込んだJsonデータが文字列として渡される
  */
 function onLoadedJsonDataBase(_jsonData) {
+	// 指定した要素の取得
+	let target = document.getElementById("database");
+
 	for (let i = 0; i < _jsonData.length - 1; ++i) {
 		// 追加する要素の作成
 		let div = document.createElement("div");
