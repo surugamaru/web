@@ -1,29 +1,29 @@
 /**
  * Jsonファイルを読み込む
- * @param {*} _FileName 読み込むJsonファイル名を渡す
+ * @param {*} _fileName 読み込むJsonファイル名を渡す
  */
-function setupDataBase(_FileName) {
+function setupDataBase(_fileName) {
 	// HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
 	let req = new XMLHttpRequest();
-	req.open("get", "./database/" + _FileName, true);
-	req.send(null);
+	req.open("get", "./database/" + _fileName, true);
+	req.send();
 
 	// 読み込みが完了した時
 	req.onload = function () {
-		onLoadedJsonDataBase(req.responseText);
+		onLoadedJsonDataBase(JSON.parse(xmlhttp.responseText));
 	}
 }
 
 /**
  * 読み込んだJsonデータを二次元配列に変換する
- * @param {*} _Str 読み込んだJsonデータが文字列として渡される
+ * @param {*} _jsonData 読み込んだJsonデータが文字列として渡される
  */
-function onLoadedJsonDataBase(_Str) {
+function onLoadedJsonDataBase(_jsonData) {
 	// 最終的な二次元配列を入れるための配列
 	let result = [];
 
 	// 改行を区切り文字として行を要素とした配列を生成
-	let tmp = _Str.split("\n");
+	let tmp = _jsonData.split("\n");
 
 	// 各行ごとにカンマで区切った文字列を要素とした二次元配列を生成
 	for (let i = 0; i < tmp.length; ++i) {
@@ -44,21 +44,21 @@ function onLoadedJsonDataBase(_Str) {
 		div.classList.add("js-animation");
 		target.appendChild(div);
 
-		Console.WriteLine(result[i][0]);
-		Console.WriteLine(result[i][1]);
-		Console.WriteLine(result[i][2]);
-		Console.WriteLine(result[i][3]);
+		console.log(_jsonData.Stock);
+		console.log(_jsonData.Name);
+		console.log(_jsonData.Price);
+		console.log(_jsonData.Path);
 
 		// 画像の作成
-		img.src = "./img/" + result[i][0];
+		img.src = "./img/" + _jsonData.Path;
 		div.appendChild(img);
 
 		// 名称の作成
-		h2.textContent = result[i][1];
+		h2.textContent = _jsonData.Name;
 		div.appendChild(h2);
 
 		// 説明の作成
-		p.textContent = result[i][2];
+		p.textContent = _jsonData.Price;
 		div.appendChild(p);
 	}
 	// すべての設定が完了したら見えているパネルの表示
