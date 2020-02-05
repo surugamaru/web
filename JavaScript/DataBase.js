@@ -35,7 +35,7 @@ function onLoadedJsonDataBase(_jsonData) {
 		target.appendChild(div);
 
 		// 画像の作成
-		Image.src = "./Image/" + _jsonData[i].Path;
+		Image.src = "./Images/" + _jsonData[i].Path;
 		div.appendChild(Image);
 
 		// 名称の作成

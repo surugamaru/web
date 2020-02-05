@@ -17,7 +17,7 @@ function createSNSNavigation() {
 	div.appendChild(a);
 	// Twitter 画像の作成
 	let Image = document.createElement("image");
-	Image.src = "./Image/SNS/Twitter.png";
+	Image.src = "./Images/SNS/Twitter.png";
 	Image.alt = "Twitter"
 	Image.style.padding = "5px";
 	a.appendChild(Image)
@@ -29,7 +29,7 @@ function createSNSNavigation() {
 	div.appendChild(a);
 	// FaceBook 画像の作成
 	Image = document.createElement("image");
-	Image.src = "./Image/SNS/Facebook.png";
+	Image.src = "./Images/SNS/Facebook.png";
 	Image.alt = "FaceBook"
 	Image.style.padding = "5px";
 	a.appendChild(Image)
@@ -41,7 +41,7 @@ function createSNSNavigation() {
 	div.appendChild(a);
 	// Instagram 画像の作成
 	Image = document.createElement("image");
-	Image.src = "./Image/SNS/Instagram.png";
+	Image.src = "./Images/SNS/Instagram.png";
 	Image.alt = "Instagram"
 	Image.style.padding = "5px";
 	a.appendChild(Image)
