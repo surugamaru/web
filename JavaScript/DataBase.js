@@ -25,7 +25,7 @@ function onLoadedJsonDataBase(_jsonData) {
 	for (let i = 0; i < _jsonData.length; ++i) {
 		// 追加する要素の作成
 		let div = document.createElement("div");
-		let Image = document.createElement("image");
+		let img = document.createElement("img");
 		let h2 = document.createElement("h2");
 		let p = document.createElement("p");
 
@@ -35,8 +35,8 @@ function onLoadedJsonDataBase(_jsonData) {
 		target.appendChild(div);
 
 		// 画像の作成
-		Image.src = "./Images/" + _jsonData[i].Path;
-		div.appendChild(Image);
+		img.src = "./Images/" + _jsonData[i].Path;
+		div.appendChild(img);
 
 		// 名称の作成
 		h2.textContent = _jsonData[i].Name;
