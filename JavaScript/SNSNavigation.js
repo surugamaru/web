@@ -12,7 +12,6 @@ function createSNSNavigation() {
 
 	// Twitter リンクの作成
 	let a = document.createElement("a");
-	a.classList.add("js-animation");
 	a.href = "https://twitter.com/_surugamaru_";
 	div.appendChild(a);
 	// Twitter 画像の作成
@@ -24,7 +23,6 @@ function createSNSNavigation() {
 
 	// FaceBook リンクの作成
 	a = document.createElement("a");
-	a.classList.add("js-animation");
 	a.href = "https://facebook.com/surugamaru";
 	div.appendChild(a);
 	// FaceBook 画像の作成
@@ -36,7 +34,6 @@ function createSNSNavigation() {
 
 	// Instagram リンクの作成
 	a = document.createElement("a");
-	a.classList.add("js-animation");
 	a.href = "https://instagram.com/surugamaru";
 	div.appendChild(a);
 	// Instagram 画像の作成
