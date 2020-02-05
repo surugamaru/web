@@ -24,7 +24,7 @@ function onLoadedScreen() {
 	contents.style.display = "block";
 
 	// 更新関数の設定
-	import("./updateManager.js").then((module) => {
+	import("./UpdateManager.js").then((module) => {
 		module.update(update, 10);
 	});
 }

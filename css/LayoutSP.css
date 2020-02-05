@@ -7,7 +7,7 @@ body:before {
 	z-index:-1;
 	width:100%;
 	height:100vh;
-	background:url("../img/background-pc.jpg")center no-repeat;
+	background:url("../Image/BackgroundSP.jpg")center no-repeat;
 	background-size:cover;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
@@ -31,7 +31,7 @@ hr {
 .header {
 	height: 250px;
 	margin-bottom: -50px;
-	background: url("../img/images.png") no-repeat center;
+	background: url("../Image/Images.png") no-repeat center;
 }
 
 .shareView {

@@ -32,10 +32,10 @@ function responsive() {
 
 	// デバイス別に読み込むCSSの設定
 	if (getDevice() === 'sp') {
-		styleSheet.href = "./css/layout.sp.css";
+		styleSheet.href = "./Css/LayoutSP.css";
 	}
 	else {
-		styleSheet.href = "./css/layout.pc.css";
+		styleSheet.href = "./Css/LayoutPC.css";
 	}
 	// CSSデータを追加
 	document.getElementsByTagName("head")[0].appendChild(styleSheet);

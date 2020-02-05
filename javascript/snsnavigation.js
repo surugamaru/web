@@ -16,11 +16,11 @@ function createSNSNavigation() {
 	a.href = "https://twitter.com/_surugamaru_";
 	div.appendChild(a);
 	// Twitter 画像の作成
-	let img = document.createElement("img");
-	img.src = "./img/sns/twitter.png";
-	img.alt = "Twitter"
-	img.style.padding = "5px";
-	a.appendChild(img)
+	let Image = document.createElement("image");
+	Image.src = "./Image/SNS/Twitter.png";
+	Image.alt = "Twitter"
+	Image.style.padding = "5px";
+	a.appendChild(Image)
 
 	// FaceBook リンクの作成
 	a = document.createElement("a");
@@ -28,11 +28,11 @@ function createSNSNavigation() {
 	a.href = "https://facebook.com/surugamaru";
 	div.appendChild(a);
 	// FaceBook 画像の作成
-	img = document.createElement("img");
-	img.src = "./img/sns/facebook.png";
-	img.alt = "FaceBook"
-	img.style.padding = "5px";
-	a.appendChild(img)
+	Image = document.createElement("image");
+	Image.src = "./Image/SNS/Facebook.png";
+	Image.alt = "FaceBook"
+	Image.style.padding = "5px";
+	a.appendChild(Image)
 
 	// Instagram リンクの作成
 	a = document.createElement("a");
@@ -40,11 +40,11 @@ function createSNSNavigation() {
 	a.href = "https://instagram.com/surugamaru";
 	div.appendChild(a);
 	// Instagram 画像の作成
-	img = document.createElement("img");
-	img.src = "./img/sns/instagram.png";
-	img.alt = "Instagram"
-	img.style.padding = "5px";
-	a.appendChild(img)
+	Image = document.createElement("image");
+	Image.src = "./Image/SNS/Instagram.png";
+	Image.alt = "Instagram"
+	Image.style.padding = "5px";
+	a.appendChild(Image)
 }
 // 読み込みが完了した時
 window.addEventListener("load", createSNSNavigation);

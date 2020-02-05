@@ -5,7 +5,7 @@
 function setupDataBase(_fileName) {
 	// HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
 	let req = new XMLHttpRequest();
-	req.open("get", "./database/" + _fileName, true);
+	req.open("get", "./DataBase/" + _fileName, true);
 	req.send();
 
 	// 読み込みが完了した時
@@ -20,12 +20,12 @@ function setupDataBase(_fileName) {
  */
 function onLoadedJsonDataBase(_jsonData) {
 	// 指定した要素の取得
-	let target = document.getElementById("database");
+	let target = document.getElementById("DataBase");
 
 	for (let i = 0; i < _jsonData.length; ++i) {
 		// 追加する要素の作成
 		let div = document.createElement("div");
-		let img = document.createElement("img");
+		let Image = document.createElement("image");
 		let h2 = document.createElement("h2");
 		let p = document.createElement("p");
 
@@ -35,8 +35,8 @@ function onLoadedJsonDataBase(_jsonData) {
 		target.appendChild(div);
 
 		// 画像の作成
-		img.src = "./img/" + _jsonData[i].Path;
-		div.appendChild(img);
+		Image.src = "./Image/" + _jsonData[i].Path;
+		div.appendChild(Image);
 
 		// 名称の作成
 		h2.textContent = _jsonData[i].Name;
