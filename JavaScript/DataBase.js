@@ -20,7 +20,7 @@ function setupDataBase(_fileName) {
  */
 function onLoadedJsonDataBase(_jsonData) {
 	// 指定した要素の取得
-	let target = document.getElementById("DataBase");
+	let target = document.getElementById("dataBase");
 
 	for (let i = 0; i < _jsonData.length; ++i) {
 		// 追加する要素の作成
