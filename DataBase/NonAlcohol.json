@@ -1,8 +1,98 @@
 [
   {
-    "Stock": 0.0,
-    "Name": "ノンアルコール",
-    "Price": 500.0,
-    "Path": "menu/nonalcohol.jpg"
+    "Stock": 1.0,
+    "Name": "コーラ",
+    "Price": 280.0,
+    "Path": "Menu/NonAlcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "オレンジ",
+    "Price": 280.0,
+    "Path": "Menu/NonAlcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "ぶどう",
+    "Price": 280.0,
+    "Path": "Menu/NonAlcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "トマト",
+    "Price": 280.0,
+    "Path": "Menu/NonAlcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "グレープフルーツ",
+    "Price": 280.0,
+    "Path": "Menu/NonAlcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "りんご",
+    "Price": 280.0,
+    "Path": "Menu/NonAlcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "緑茶",
+    "Price": 280.0,
+    "Path": "Menu/NonAlcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "天然水",
+    "Price": 280.0,
+    "Path": "Menu/NonAlcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "カルピスソーダ",
+    "Price": 380.0,
+    "Path": "Menu/NonAlcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "カルピス W",
+    "Price": 380.0,
+    "Path": "Menu/NonAlcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "ノンアルビール",
+    "Price": 380.0,
+    "Path": "Menu/NonAlcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "炭酸水",
+    "Price": 380.0,
+    "Path": "Menu/NonAlcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "HOT 天然水",
+    "Price": 380.0,
+    "Path": "Menu/NonAlcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "HOT 烏龍茶 ",
+    "Price": 380.0,
+    "Path": "Menu/NonAlcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "HOT カルピス",
+    "Price": 380.0,
+    "Path": "Menu/NonAlcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "HOT 緑茶",
+    "Price": 380.0,
+    "Path": "Menu/NonAlcohol.jpg"
   }
 ]

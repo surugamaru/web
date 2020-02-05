@@ -1,8 +1,164 @@
 [
   {
-    "Stock": 0.0,
-    "Name": "アルコール",
-    "Price": 500.0,
-    "Path": "menu/alcohol.jpg"
+    "Stock": 1.0,
+    "Name": "生ビール 一口(麒麟 一番搾り)",
+    "Price": 180.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "生ビール 小(麒麟 一番搾り)",
+    "Price": 380.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "生ビール 中(麒麟 一番搾り)",
+    "Price": 580.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "瓶ビール(麒麟 クラシックラガー)",
+    "Price": 680.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "麒麟 ハードシードル",
+    "Price": 480.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "グラス ワイン 赤",
+    "Price": 580.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "鏡月 烏龍割り 冷",
+    "Price": 380.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "鏡月 緑茶割り 冷",
+    "Price": 380.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "鏡月 烏龍割り 温",
+    "Price": 480.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "鏡月 緑茶割り 温",
+    "Price": 480.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "鏡月 炭酸割り",
+    "Price": 480.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "鏡月 お湯割り",
+    "Price": 480.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "鏡月 水割り",
+    "Price": 380.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "レモンサワー(100%)",
+    "Price": 380.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "シークワーサーサワー(100%)",
+    "Price": 380.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "グレープフルーツサワー(100%)",
+    "Price": 380.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "梅塩サワー",
+    "Price": 380.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "カルピスサワー",
+    "Price": 380.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "パインサワー",
+    "Price": 380.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "メロンサワー",
+    "Price": 380.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "茘枝おろしサワー",
+    "Price": 380.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "林檎おろしサワー",
+    "Price": 380.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "柚子蜜おろしサワー",
+    "Price": 380.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "白桃おろしサワー",
+    "Price": 380.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "葡萄おろしサワー",
+    "Price": 380.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "青じそおろしサワー",
+    "Price": 380.0,
+    "Path": "Menu/Alcohol.jpg"
+  },
+  {
+    "Stock": 1.0,
+    "Name": "つぶつぶ蜜紺サワー",
+    "Price": 380.0,
+    "Path": "Menu/Alcohol.jpg"
   }
 ]
