@@ -1,10 +1,10 @@
 .crossPanel {
 	display: inline-block;
-	margin: 10px 5px;
+	margin: 20px 20px;
 	position: relative;
 	border-top: solid 2.5px;
 	border-bottom: solid 2.5px;
-	padding: 5px 15px;
+	padding: 10px 20px;
 	text-decoration: none;
 	color: white;
 }
