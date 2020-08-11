@@ -17,7 +17,6 @@
 	<script type="module" src="./JavaScript/UpdateManager.js"></script>
 	<script type="text/javascript" src="./JavaScript/Loading.js"></script>
 	<script type="text/javascript" src="./JavaScript/Animation.js"></script>
-	<script type="text/javascript" src="./JavaScript/DataBase.js"></script>
 	<script type="text/javascript" src="./JavaScript/SNSNavigation.js"></script>
 </head>
 
@@ -28,37 +27,53 @@
 	</div>
 
 	<div id="contents" style="display: none;">
-		<!-- pagePath -->
-		<div class="pagePath">
-			<a href="./Menu.html">メニュー</a>
-			<a>＞</a>
-			<a>ノンアルコール</a>
-		</div>
 		<!-- topImage -->
 		<div class="header"></div>
 		<!-- topName -->
-		<h1>ノンアルコール</h1>
+		<h1>ブログ</h1>
 		<!-- pageView -->
 		<div>
-			<a href="./Index.html" class="crossPanel">
+			<a href="./index.html" class="crossPanel">
 				<p>ホーム</p>
 			</a>
-			<a href="./Menu.html" class="crossPanel">
+			<a href="./menu.html" class="crossPanel">
 				<p>メニュー</p>
 			</a>
-			<a href="./Blog.html" class="crossPanel">
+			<a href="./blog.html" class="crossPanel">
 				<p>ブログ</p>
 			</a>
-			<a href="./Access.html" class="crossPanel">
+			<a href="./access.html" class="crossPanel">
 				<p>アクセス</p>
 			</a>
 		</div>
 		<hr />
 		<!-- contents -->
-		<script>setupDataBase("NonAlcohol.json")</script>
-		<div id="dataBase"></div>
+		<div class="crossPanel js-animation">
+			<p class="label">
+				<Image src="./Images/Test.jpg" /><br />
+				上に画像が表示されています<br />
+			</p>
+		</div>
+		<div class="crossPanel js-animation">
+			<p class="label">
+				下に画像が表示されています<br />
+				<Image src="./Images/Test.jpg" /><br />
+			</p>
+		</div>
+		<div class="crossPanel js-animation">
+			<p class="label">
+				<Image src="./Images/Test.jpg" align="left" />
+				左に画像が表示されています<br />
+			</p>
+		</div>
+		<div class="crossPanel js-animation">
+			<p class="label">
+				<Image src="./Images/Test.jpg" align="right" />
+				右に画像が表示されています<br />
+			</p>
+		</div>
 		<hr />
-		<!--footer-->
+		<!-- footer -->
 		<div id="footer"></div>
 		<!-- copyright -->
 		<small>

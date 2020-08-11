@@ -17,7 +17,9 @@
 	<script type="module" src="./JavaScript/UpdateManager.js"></script>
 	<script type="text/javascript" src="./JavaScript/Loading.js"></script>
 	<script type="text/javascript" src="./JavaScript/Animation.js"></script>
+	<script type="text/javascript" src="./JavaScript/DataBase.js"></script>
 	<script type="text/javascript" src="./JavaScript/SNSNavigation.js"></script>
+	<script type="text/javascript" src="./JavaScript/DataBase.js"></script>
 </head>
 
 <body>
@@ -27,44 +29,35 @@
 	</div>
 
 	<div id="contents" style="display: none;">
+		<!-- pagePath -->
+		<div class="pagePath">
+			<a href="./menu.html">メニュー</a>
+			<a>＞</a>
+			<a>揚げ物</a>
+		</div>
 		<!-- topImage -->
 		<div class="header"></div>
 		<!-- topName -->
-		<h1>メニュー</h1>
+		<h1>揚げ物</h1>
 		<!-- pageView -->
 		<div>
-			<a href="./Index.html" class="crossPanel">
+			<a href="./index.html" class="crossPanel">
 				<p>ホーム</p>
 			</a>
-			<a href="./Menu.html" class="crossPanel">
+			<a href="./menu.html" class="crossPanel">
 				<p>メニュー</p>
 			</a>
-			<a href="./Blog.html" class="crossPanel">
+			<a href="./blog.html" class="crossPanel">
 				<p>ブログ</p>
 			</a>
-			<a href="./Access.html" class="crossPanel">
+			<a href="./access.html" class="crossPanel">
 				<p>アクセス</p>
 			</a>
 		</div>
 		<hr />
 		<!-- contents -->
-		<div>
-			<a href="./Sashimi.html" class="crossPanel js-animation">
-				<Image src="./Images/Menu/Sashimi.jpg" alt="刺身">
-			</a>
-			<a href="./Fried.html" class="crossPanel js-animation">
-				<Image src="./Images/Menu/Fried.jpg" alt="揚げ物">
-			</a>
-			<a href="./Salada.html" class="crossPanel js-animation">
-				<Image src="./Images/Menu/Salada.jpg" alt="サラダ">
-			</a>
-			<a href="./Alcohol.html" class="crossPanel js-animation">
-				<Image src="./Images/Menu/Alcohol.jpg" alt="アルコール">
-			</a>
-			<a href="./NonAlcohol.html" class="crossPanel js-animation">
-				<Image src="./Images/Menu/NonAlcohol.jpg" alt="ノンアルコール">
-			</a>
-		</div>
+		<script>setupDataBase("Fried.json")</script>
+		<div id="dataBase"></div>
 		<hr />
 		<!-- footer -->
 		<div id="footer"></div>

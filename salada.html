@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scale=no" />
+	<meta http-equiv="Cache-Control" content="no-cache">
 	<!-- title -->
 	<title>駿河丸</title>
 	<!-- icon -->
@@ -17,6 +17,7 @@
 	<script type="module" src="./JavaScript/UpdateManager.js"></script>
 	<script type="text/javascript" src="./JavaScript/Loading.js"></script>
 	<script type="text/javascript" src="./JavaScript/Animation.js"></script>
+	<script type="text/javascript" src="./JavaScript/DataBase.js"></script>
 	<script type="text/javascript" src="./JavaScript/SNSNavigation.js"></script>
 </head>
 
@@ -27,35 +28,38 @@
 	</div>
 
 	<div id="contents" style="display: none;">
+		<!-- pagePath -->
+		<div class="pagePath">
+			<a href="./menu.html">メニュー</a>
+			<a>＞</a>
+			<a>サラダ</a>
+		</div>
 		<!-- topImage -->
 		<div class="header"></div>
 		<!-- topName -->
-		<h1>ホーム</h1>
+		<h1>サラダ</h1>
 		<!-- pageView -->
 		<div>
-			<a href="./Index.html" class="crossPanel">
+			<a href="./index.html" class="crossPanel">
 				<p>ホーム</p>
 			</a>
-			<a href="./Menu.html" class="crossPanel">
+			<a href="./menu.html" class="crossPanel">
 				<p>メニュー</p>
 			</a>
-			<a href="./Blog.html" class="crossPanel">
+			<a href="./blog.html" class="crossPanel">
 				<p>ブログ</p>
 			</a>
-			<a href="./Access.html" class="crossPanel">
+			<a href="./access.html" class="crossPanel">
 				<p>アクセス</p>
 			</a>
 		</div>
 		<hr />
 		<!-- contents -->
-		<p class="crossPanel js-animation">
-			公式サイトを開いていただきありがとうございます。<br />
-			メニューやブログ、アクセス方法がご確認いただけます。
-		</p>
+		<script>setupDataBase("Salada.json")</script>
+		<div id="dataBase"></div>
 		<hr />
 		<!-- footer -->
 		<div id="footer"></div>
-		<p>11102201</p>
 		<!-- copyright -->
 		<small>
 			<p>&copy; 2019 KanzakiRei</p>
